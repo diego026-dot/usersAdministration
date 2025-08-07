@@ -20,5 +20,11 @@ public class Empleado {
     @ManyToOne
     private Departamento departamento;
 
+    public Empleado(String name, String email, String password, Departamento departamento) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.departamento = departamento;
+    }
 
 }
